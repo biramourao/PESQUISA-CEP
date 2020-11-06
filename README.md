@@ -25,6 +25,12 @@ Tabela de conteúdos
 <!--Features-->
 <!--Demonstração da Aplicação-->
 <!--Pré-requisitos e como rodar a aplicação/testes-->
+Pré-requisitos e como rodar a aplicação
+=======================================
+- Você terá que ter instalado o NodeJS no seu computador. (Caso não tenha instalado siga as orientações no endereço: https://github.com/nodejs/help/wiki/Installation)
+
+- Após instalado o NodeJS faça o clone do repositório e rode o comando ```npm i``` para instalar as dependencias do projeto.
+- Abra o ```Index.html```
 <!--Tecnologias utilizadas-->
 
 Tecnologias
