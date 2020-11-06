@@ -1,0 +1,30 @@
+{
+  "name": "pesquisa-cep",
+  "version": "1.0.0",
+  "description": "Aplicação para realizar pesquisas de endereços por CEP e descobrir CEP por endereços",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biramourao/pesquisa-cep.git"
+  },
+  "keywords": [
+    "github",
+    "nodejs",
+    "angular",
+    "npm",
+    "cep",
+    "pesquisa"
+  ],
+  "author": "Ubiratan Leitão Mourão",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biramourao/pesquisa-cep/issues"
+  },
+  "homepage": "https://github.com/biramourao/pesquisa-cep#readme",
+  "dependencies": {
+    "angular": "^1.8.2"
+  }
+}
