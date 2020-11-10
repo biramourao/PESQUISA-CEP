@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="pesquisaCepApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/angular-material/angular-material.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <title>Pesquisa-CEP</title>
+    <script src="../node_modules/angular/angular.js"></script>
+    <script src="../node_modules/angular-aria/angular-aria.js"></script>
+    <script src="../node_modules/angular-animate/angular-animate.js"></script>
+    <script src="../node_modules/angular-messages/angular-messages.js"></script>
+    <script src="../node_modules/angular-material/angular-material.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./pesquisa-cep.module.js"></script>
+    <script src="./pesquisa-cep.controller.js"></script>
+    <script src="./pesquisa-cep.service.js"></script>
+
+
+
+
+</head>
+
+<body>
+    <h1>Pesquisa CEP</h1>
+    <h2>Aplicação para realizar pesquisas de endereços por CEP e descobrir CEP por endereços</h2>
+
+    <div ng-controller="PesquisaCepController as vm">
+        <form name="pesquisaPorCepForm" ng-submit="vm.pesquisaPorCep()">
+            <md-input-container>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" ng-model="vm.cep" required="">
+                <md-button type="submit" class="md-raised md-primary">Pesquisar</md-button>
+                <div ng-messages="pesquisaPorCepForm.cep.$error">
+                    <div ng-message="required">Este campo é obrigatório!</div>
+                </div>
+            </md-input-container>
+        </form>
+        <table class="table" ng-if="vm.respostaPesquisaPorCep!=null">
+            <thead>
+              <tr>
+                <th scope="col">CEP</th>
+                <th scope="col">Logradouro</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Localidade</th>
+                <th scope="col">UF</th>
+                <th scope="col">IBGE</th>
+                <th scope="col">GIA</th>
+                <th scope="col">DDD</th>
+                <th scope="col">SIAFI</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th >{{vm.respostaPesquisaPorCep.cep}}</th>
+                <td>{{vm.respostaPesquisaPorCep.logradouro}}</td>
+                <td>{{vm.respostaPesquisaPorCep.complemento}}</td>
+                <td>{{vm.respostaPesquisaPorCep.bairro}}</td>
+                <td>{{vm.respostaPesquisaPorCep.localidade}}</td>
+                <td>{{vm.respostaPesquisaPorCep.uf}}</td>
+                <td>{{vm.respostaPesquisaPorCep.ibge}}</td>
+                <td>{{vm.respostaPesquisaPorCep.gia}}</td>
+                <td>{{vm.respostaPesquisaPorCep.ddd}}</td>
+                <td>{{vm.respostaPesquisaPorCep.siafi}}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</body>
+</html>

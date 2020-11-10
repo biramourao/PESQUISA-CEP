@@ -2,7 +2,7 @@
   "name": "pesquisa-cep",
   "version": "1.0.0",
   "description": "Aplicação para realizar pesquisas de endereços por CEP e descobrir CEP por endereços",
-  "main": "index.js",
+  "main": "app/index.htlml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,6 +25,13 @@
   },
   "homepage": "https://github.com/biramourao/pesquisa-cep#readme",
   "dependencies": {
-    "angular": "^1.8.2"
+    "angular": "^1.8.2",
+    "angular-animate": "^1.8.2",
+    "angular-aria": "^1.8.2",
+    "angular-material": "^1.2.1",
+    "angular-messages": "^1.8.2",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "material-icons": "^0.3.1"
   }
 }
