@@ -40,6 +40,10 @@ As seguintes ferramentas estão sendo usadas para a construção do projeto:
 
 - [Node.js](https://nodejs.org/en/)
 - [AngularJS](https://angularjs.org/)
+- [Bootstrap](https://getbootstrap.com.br/)
+- [AngularJS Material](https://material.angularjs.org)
+- [JQuery](https://jquery.com/)
+
 <!--Contribuição-->
 Contribuições
 =============
