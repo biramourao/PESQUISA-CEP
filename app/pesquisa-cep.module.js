@@ -1,1 +1,1 @@
-angular.module('pesquisaCepApp', ['ngMaterial', 'ngMessages', 'ngAnimate','ngAria']);
+angular.module('pesquisaCepApp', ['ngMaterial', 'ngMessages', 'ngAnimate', 'ngAria']);
